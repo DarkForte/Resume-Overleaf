@@ -1,0 +1,202 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{upquote}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}
+{
+  \vspace{-4pt}\scshape\raggedright\large
+}
+{}{0em}{}
+[\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeEducationHeading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2
+      \end{tabular*}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      #3 & #4
+      \end{tabular*}
+}
+
+\newcommand{\resumeSubheading}[3]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2
+      \end{tabular*}
+      \textit{\small#3}
+}
+
+\newcommand{\resumeMiniheading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, itemsep=6pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*, topsep=0ex]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Weichen Ke} & weichenzero@gmail.com\\
+  www.linkedin.com/in/weichenzero/ & (412) 482-8717 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \begin{itemize}[leftmargin=*, itemsep=0pt, label={}]
+    \resumeEducationHeading
+      {Carnegie Mellon University - School of Computer Science}{Pittsburgh, PA}
+      {\textit{Master of Science, Computer Science}}{08/2018 -- 12/2019}
+    
+    \resumeEducationHeading
+      {Peking University - School of EECS}{Beijing, China}
+      {\textit{Selected Courses: Distributed Systems, Deep Learning | GPA: 3.85/4.0}}{09/2016 -- 06/2018}
+    
+    \resumeEducationHeading
+      {Beijing University of Technology - College of Computer Science}{Beijing, China}
+      {\textit{Bachelor, Computer Science | GPA: 3.93/4.0, Rank: 1/44}} {09/2012 -- 07/2016}
+  \end{itemize}
+    
+  %\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \begin{itemize}[leftmargin=*, itemsep=5pt, label={}]
+
+    \resumeSubheading
+      {Didi Chuxing}{07/2017 -- 07/2018}
+      {Algorithm Research Intern at Smart Mobility Group/AI Labs}
+      \resumeItemListStart
+        \resumeItem
+        {Designed a reinforcement learning based order dispatching strategy with Deep Q Network and pushed it online, which boosted global GMV by 0.5\% - 5\% in all experimental cities.}
+        \resumeItem
+        {Built an automated feature visualization pipeline with Hive on PySpark.}
+    \resumeItemListEnd
+      
+    \resumeSubheading
+      {Microsoft Research Asia}{07/2015 -- 07/2016}
+      {Research Intern at Software Analytics Group, Leader of project BigIN4}
+      \resumeItemListStart
+        \resumeItem
+        {Proposed a novel algorithm for interactive approximate query processing on big data based on Tree Augmented Bayesian Network, and implemented it on Spark with Scala and Java.}
+        \resumeItem
+        {Deployed the platform to production cluster running on Hadoop, and analyzed more than 1TB data per day.}
+      \resumeItemListEnd
+  \end{itemize}
+  
+%-----------PROJECTS-----------------
+\section{Projects}
+  \begin{itemize}[leftmargin=*, itemsep=5pt, label={}]
+    \resumeSubheading{Flappy Bird AI based on Deep Reinforcement Learning}{06/2017}
+    {Peking University | Python, Tensorflow, Keras}
+        \resumeItemListStart
+            \resumeItem {Designed the network architecture to map raw pixel input to actions with Tensorflow.}
+            \resumeItem {Implemented A3C algorithm from scratch, with asynchronous exploration and model updating using Python.}
+        \resumeItemListEnd
+    
+    \resumeSubheading{Parameter Server for Logistic Regression}{06/2017}
+    {Peking University | C++, MPI, Protobuf}
+        \resumeItemListStart
+            \resumeItem {Designed the master-coordinator-worker architecture and the communication protocol with Protobuf.}
+            \resumeItem {Implemented the architecture with MPI to support adding and removing workers dynamically.}
+            \resumeItem {Implemented sparse parameter transmission to reduce messaging overhead.}
+        \resumeItemListEnd
+        
+    \resumeSubheading{Real-time Online Game: "Bomber Man Online"}{04/2015}{Beijing University of Technology | C++, Direct2D, IOCP, STL, Thread Scheduling}
+        \resumeItemListStart
+            \resumeItem {Designed the Client-Server architecture and the messaging protocol under IOCP.}
+            \resumeItem {Implemented the game core from scratch and efficient game data access using STL with Visual Studio.}
+            \resumeItem {Implemented lockstep multiplayer synchronization model with a mutex based thread scheduler.}
+        \resumeItemListEnd
+        
+  \end{itemize}
+
+%-----------PUBLICATIONS-----------------
+\section{Publication}
+  \begin{itemize}[leftmargin=*, itemsep=0pt, label={}]
+    \resumeItem 
+    {Qingwei Lin, \textbf{Weichen Ke}, Jian-Guang Lou, Hongyu Zhang, Kaixin Sui, Yong Xu, Ziyi Zhou, Bo Qiao, Dongmei Zhang. \href{http://www.kdd.org/kdd2018/accepted-papers/view/bigin4-instant-interactive-insight-identification-for-multi-dimensional-big}{"BigIN4: Instant, Interactive Insight Identification for Multi-Dimensional Big Data"}, \textbf{SIGKDD 2018}.  (First Student Author) }
+  \end{itemize}
+
+%-----------AWARDS-----------------
+\section{Honors}
+  \begin{itemize}[leftmargin=*, itemsep=-1pt, label={}]
+    \resumeMiniheading{"Star of Tomorrow" Title for outstanding MSRA interns \normalfont{(Rate: 10\%)}}{2016}
+    \resumeMiniheading{Silver Medal of EC-Final Round of ACM-ICPC}{2015}
+    \resumeMiniheading{IBM Scholarship and National Scholarship {\normalfont(Rate: 3/125)}}{2014}
+  \end{itemize}
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+  \begin{itemize}[leftmargin=*, itemsep=-2pt, label={}]
+    \item{
+      \textbf{Programming Languages}{: C\texttt{++}, Java, Python, Scala}
+    }
+    \item{
+      \textbf{Framework \& Libraries}{: Hadoop, Spark, Hive, Tensorflow, Keras, XGBoost, Protobuf}
+    }
+    \item{
+      \textbf{Methods \& Tools}{: Git, Latex, Linux}
+    }
+    \item{
+      \textbf{Technologies}{: Approximate Query Processing, Deep Reinforcement Learning, Blockchain}
+    }
+  \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
