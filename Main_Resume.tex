@@ -17,6 +17,7 @@
 \usepackage{upquote}
 \usepackage[T1]{fontenc}
 \usepackage{hyperref}
+\usepackage{makecell}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -51,9 +52,7 @@
 \newcommand{\resumeEducationHeading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2
-      \end{tabular*}
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
       #3 & #4
       \end{tabular*}
 }
@@ -98,9 +97,12 @@
 %-----------EDUCATION-----------------
 \section{Education}
   \begin{itemize}[leftmargin=*, itemsep=0pt, label={}]
-    \resumeEducationHeading
-      {Carnegie Mellon University - School of Computer Science}{Pittsburgh, PA}
-      {\textit{Master of Science, Computer Science}}{08/2018 -- 12/2019}
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{Carnegie Mellon University - School of Computer Science} & {Pittsburgh, PA} \\
+      \textit{Master of Science, Computer Science} & {08/2018 -- 12/2019} \\
+      \textit{Selected Courses: Parallel Computing, Database Systems} & {}
+    \end{tabular*}
     
     \resumeEducationHeading
       {Peking University - School of EECS}{Beijing, China}
@@ -132,21 +134,17 @@
       {Research Intern at Software Analytics Group, Leader of project BigIN4}
       \resumeItemListStart
         \resumeItem
-        {Proposed a novel algorithm for interactive approximate query processing on big data based on Tree Augmented Bayesian Network, and implemented it on Spark with Scala and Java.}
+        {Proposed a novel algorithm for interactive approximate query processing on big data based on Bayesian Network.}
         \resumeItem
-        {Deployed the platform to production cluster running on Hadoop, and analyzed more than 1TB data per day.}
+        {Built the query answering engine on Spark with Scala and Java.}
+        \resumeItem
+        {Deployed the platform to production cluster running on Hadoop and analyzed more than 1TB data per day.}
       \resumeItemListEnd
   \end{itemize}
   
 %-----------PROJECTS-----------------
 \section{Projects}
   \begin{itemize}[leftmargin=*, itemsep=5pt, label={}]
-    \resumeSubheading{Flappy Bird AI based on Deep Reinforcement Learning}{06/2017}
-    {Peking University | Python, Tensorflow, Keras}
-        \resumeItemListStart
-            \resumeItem {Designed the network architecture to map raw pixel input to actions with Tensorflow.}
-            \resumeItem {Implemented A3C algorithm from scratch, with asynchronous exploration and model updating using Python.}
-        \resumeItemListEnd
     
     \resumeSubheading{Parameter Server for Logistic Regression}{06/2017}
     {Peking University | C++, MPI, Protobuf}
