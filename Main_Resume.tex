@@ -101,12 +101,14 @@
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{Carnegie Mellon University - School of Computer Science } & {Pittsburgh, PA} \\
       \textit{Master of Science, Computer Science | QPA: 4.0/4.33} & {08/2018 -- 12/2019} \\
-      \textit{Selected Courses: Parallel Computing, Adv.Database Systems, Adv. Cloud Computing} & {}
+      \textit{Selected Courses: Parallel Computing, Adv.Database Systems, Adv.Cloud Computing} & {}
     \end{tabular*}
-    
-    \resumeEducationHeading
-      {Peking University - School of EECS}{Beijing, China} 
-      {\textit{Ph.D. (Unfinished) | GPA: 3.85/4.0 } } {09/2016 -- 06/2018} 
+      
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{Peking University - School of EECS} & {Beijing, China} \\
+    \textit{Ph.D. (Unfinished) | GPA: 3.85/4.0} & {09/2016 -- 06/2018} \\
+    \textit{Topics of Interest: Deep Reinforcement Learning, Blockchain} & {}
+\end{tabular*}
     
     \resumeEducationHeading
       {Beijing University of Technology - College of Computer Science}{Beijing, China}
@@ -148,7 +150,7 @@
 \section{Projects}
   \begin{itemize}[leftmargin=*, itemsep=5pt, label={}]
     \resumeSubheading{TerrierDB}{06/2019}
-    {Carnegie Mellon University | C++, Concurrency, Wire Protocol}
+    {Carnegie Mellon University | C++, Concurrency Control, Wire Protocol}
     \resumeItemListStart
         \resumeItem {Implemented a B+Tree index with fine-grained latch crabbing to reduce contention in index scanning.}
         \resumeItem {Built the networking layer and the traffic cop that fully supports the PostgreSQL wire protocol.}
@@ -158,8 +160,7 @@
     \resumeSubheading {Low Poly Style Image/Video Transformer} {12/2018}
     {Carnegie Mellon University | C++, CUDA, Parallel Computing, Computer Graphics}
     \resumeItemListStart
-        \resumeItem {Implemented a lock-free Delauney Triangulation algorithm on GPU with CUDA to maximize paralellism.}
-        \resumeItem {The GPU version on GTX 1080 achieved 50x speedup over the CPU version on Xeon E3.}
+        \resumeItem {Implemented a lock-free Delauney Triangulation algorithm on GPU with CUDA to maximize paralellism, which achieved 50x speedup over the CPU version.}
     \resumeItemListEnd
     
     \resumeSubheading{Parameter Server for Logistic Regression}{06/2017}
@@ -169,10 +170,10 @@
             \resumeItem {Implemented sparse parameter transmission to reduce messaging overhead.}
         \resumeItemListEnd
         
-    \resumeSubheading{Real-time Online Game: "Bomber Man Online"}{04/2015}{Beijing University of Technology | C++, Direct2D, IOCP, STL, Thread Scheduling}
+    \resumeSubheading{Real-time Online Game: "Bomber Man Online"}{04/2015}{Beijing University of Technology | C++, Direct2D, IOCP, STL, Concurrency Control}
         \resumeItemListStart
-            \resumeItem {Designed the client-server architecture and the messaging protocol under IOCP.}
-            \resumeItem {Implemented lockstep multiplayer synchronization model with a mutex based thread scheduler.}
+            \resumeItem {Designed and implemented the client-server architecture and the game core from scratch.}
+            \resumeItem {Implemented lockstep multiplayer synchronization model with semaphores and daemon threads.}
         \resumeItemListEnd
         
   \end{itemize}
@@ -192,9 +193,6 @@
     }
     \item{
       \textbf{Framework \& Libraries}{: Hadoop, Spark, Hive, Tensorflow, Keras, XGBoost, Protobuf, Git, Linux}
-    }
-    \item{
-      \textbf{Technologies}{: Approximate Query Processing, Deep Reinforcement Learning, Blockchain}
     }
   \end{itemize}
 
