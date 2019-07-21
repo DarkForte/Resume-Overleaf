@@ -122,6 +122,16 @@
   \begin{itemize}[leftmargin=*, itemsep=5pt, label={}]
 
     \resumeSubheading
+      {Dropbox}{05/2019 -- 08/2019}
+      {Software Engineer Intern at Coredata Group}
+      \resumeItemListStart
+        \resumeItem
+        {Designed long-running simulation tests for a distributed transactional key-value store database for checking ACID properties, serializabilty and two-phase committing. The tests uncovered several major design bugs.}
+        \resumeItem
+        {Implemented the simulation framework with Go and deployed it in the CI framework and the stage cluster.}
+    \resumeItemListEnd
+
+    \resumeSubheading
       {Didi Chuxing}{07/2017 -- 07/2018}
       {Algorithm Research Intern at Smart Mobility Group/AI Labs}
       \resumeItemListStart
@@ -152,13 +162,12 @@
     \resumeSubheading{TerrierDB}{06/2019}
     {Carnegie Mellon University | C++, Concurrency Control, Wire Protocol}
     \resumeItemListStart
-        \resumeItem {Implemented a B+Tree index with fine-grained latch crabbing to reduce contention in index scanning.}
+        \resumeItem {Implemented a B+Tree index with fine-grained latch crabbing to reduce contention in index scans.}
         \resumeItem {Built the networking layer and the traffic cop that fully supports the PostgreSQL wire protocol.}
-        \resumeItem {Built a settings manager that supports tuning and deploying configurations online with async callbacks.}
     \resumeItemListEnd
     
     \resumeSubheading {Low Poly Style Image/Video Transformer} {12/2018}
-    {Carnegie Mellon University | C++, CUDA, Parallel Computing, Computer Graphics}
+    {Carnegie Mellon University | C++, CUDA, Computer Graphics}
     \resumeItemListStart
         \resumeItem {Implemented a lock-free Delauney Triangulation algorithm on GPU with CUDA to maximize paralellism, which achieved 50x speedup over the CPU version.}
     \resumeItemListEnd
@@ -168,12 +177,6 @@
         \resumeItemListStart
             \resumeItem {Designed the computation model with MPI and the communication protocol with Protobuf.}
             \resumeItem {Implemented sparse parameter transmission to reduce messaging overhead.}
-        \resumeItemListEnd
-        
-    \resumeSubheading{Real-time Online Game: "Bomber Man Online"}{04/2015}{Beijing University of Technology | C++, Direct2D, IOCP, STL, Concurrency Control}
-        \resumeItemListStart
-            \resumeItem {Designed and implemented the client-server architecture and the game core from scratch.}
-            \resumeItem {Implemented lockstep multiplayer synchronization model with semaphores and daemon threads.}
         \resumeItemListEnd
         
   \end{itemize}
@@ -189,7 +192,7 @@
 \section{Skills}
   \begin{itemize}[leftmargin=*, itemsep=-2pt, label={}]
     \item{
-      \textbf{Programming Languages}{: C\texttt{++}, Java, Python, Scala}
+      \textbf{Programming Languages}{: C\texttt{++}, Java, Python, Scala, Go}
     }
     \item{
       \textbf{Framework \& Libraries}{: Hadoop, Spark, Hive, Tensorflow, Keras, XGBoost, Protobuf, Git, Linux}
